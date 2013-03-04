@@ -14,6 +14,20 @@ namespace CurveWinForms
         public Form1()
         {
             InitializeComponent();
+
+            Application.Idle += delegate { this.Invalidate(); };
+
+            SetStyle(
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.OptimizedDoubleBuffer |
+                ControlStyles.ResizeRedraw |
+                ControlStyles.UserPaint,
+                true);
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
         }
     }
 }
