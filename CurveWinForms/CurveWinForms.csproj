@@ -52,7 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Area.cs" />
+    <Compile Include="Model\Level.cs" />
     <Compile Include="Model\Border.cs" />
     <Compile Include="Model\Effect.cs" />
     <Compile Include="Model\Game.cs" />
