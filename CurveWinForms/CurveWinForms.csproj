@@ -52,6 +52,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Area.cs" />
+    <Compile Include="Model\Border.cs" />
+    <Compile Include="Model\Effect.cs" />
+    <Compile Include="Model\Game.cs" />
+    <Compile Include="Model\Player.cs" />
+    <Compile Include="Model\PowerUp.cs" />
+    <Compile Include="Model\PowerUpBank.cs" />
+    <Compile Include="Model\Round.cs" />
+    <Compile Include="Model\Score.cs" />
+    <Compile Include="Model\StoredPowerUp.cs" />
+    <Compile Include="Model\UniversalPowerUp.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
