@@ -11,6 +11,11 @@ namespace CurveWinForms
         private const float STANDARD_SPEED = 80;
         private List<PointF> points = new List<PointF>();
 
+        public int pointcount
+        {
+            get { return points.Count; }
+        }
+
         private PointF current;
         private float angle = 0;
 
@@ -29,6 +34,17 @@ namespace CurveWinForms
         public Player(float x, float y, float direction, Color color)
             : this(new PointF(x, y), direction, color)
         {
+        }
+
+        public void Message(uint message, uint time, params int[] args)
+        {
+            switch (message)
+            {
+                    // Start message
+                case 0x00000001:
+                default:
+                    break;
+            }
         }
 
         public void Start()

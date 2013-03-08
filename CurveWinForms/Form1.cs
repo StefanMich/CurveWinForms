@@ -68,7 +68,8 @@ namespace CurveWinForms
             base.OnPaint(e);
             TimeSpan ts = DateTime.Now - last;
             last = DateTime.Now;
-            e.Graphics.DrawString(Math.Round(1 / ts.TotalSeconds).ToString("0") + " FPS", this.Font, Brushes.Black, 0, 0);
+            string text = string.Format("FPS: {0}\nPOINTS: {1}", Math.Round(1 / ts.TotalSeconds).ToString("0"), players.Sum(x => x.pointcount));
+            e.Graphics.DrawString(text, this.Font, Brushes.Black, 0, 0);
 
             Matrix m = new Matrix();
             m.Scale(((float)this.Height - 40f) / 600f, ((float)this.Height - 40f) / 600f);
