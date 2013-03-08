@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CurveWinForms.Model
 {
-    class StoredPowerUp
+    public class StoredPowerUp : PowerUp
     {
     }
 }
